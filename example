@@ -1,0 +1,35 @@
+   /**
+     * example
+     */
+    class EventListAdapter extends LBaseAdapter {
+    
+        @Override
+        public int getCount() {
+            return 100;
+        }
+
+        @Override
+        public View setWidget(int position, View convertView, ViewGroup parent) {
+            holder.tv_01.setText("example");
+            final int position1 = position;
+
+            holder.tv_01.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+            return convertView;
+        }
+
+        @Override
+        public void setHolder(View convertView) {
+            holder.tv_01 = (TextView) convertView.findViewById(R.id.text_filter_list);
+
+        }
+
+        @Override
+        public int setLayoutId() {
+            return R.layout.item_example;
+        }
+    }

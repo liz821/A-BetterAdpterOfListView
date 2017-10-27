@@ -32,4 +32,5 @@
         public int setLayoutId() {
             return R.layout.item_example;
         }
+        
     }

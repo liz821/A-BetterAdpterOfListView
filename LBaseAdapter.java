@@ -56,7 +56,7 @@ public abstract class LBaseAdapter extends BaseAdapter {
 
     //回调setHolder
     public void bindHolder(View convertView) {
-        setHolder(convertView);//把getView的converView传递给Holder
+         setHolder(convertView);//把getView的converView传递给Holder
     }
 
     /**
